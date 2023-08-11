@@ -1,0 +1,17 @@
+.slideimg{
+  border: 1px solid red;
+  text-align: center;
+
+}
+
+.imgBox{
+  border: 1px solid;
+  width: 500px;
+  height: 500px;
+  
+}
+
+.img {
+  object-fit: scale-down;
+}
+
