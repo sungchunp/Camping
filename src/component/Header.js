@@ -8,7 +8,7 @@ const Header = () => {
 
 
   return (
-    <Navbar className="header">
+    <Navbar>
       <Container className="header">
        
         <Navbar.Brand href="#home">

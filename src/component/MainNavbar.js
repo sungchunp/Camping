@@ -7,7 +7,7 @@ const MainNavbar = () => {
     <nav>
       <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">텐트</a>
+          <a class="nav-link active" aria-current="page" href="#">텐트/타프</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">테이블</a>

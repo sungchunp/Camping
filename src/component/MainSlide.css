@@ -1,24 +1,18 @@
 .slideimg{
-  border: 1px solid red;
+  border: 1px solid blue;
   text-align: center;
-  width: 1080px;
-
 }
 
 .imgBox{
-  border: 1px solid;
-  width: 1080px;
-  height: 566px;
+  border: 1px solid red;
   text-align: center;
   margin: auto;
-  
+  width: 1320px;
+  height: 600px;
 }
 
-.img {
-  background-position: center;
-  position: absolute;
-  max-width: 800px;
-  max-width: 400px;
-  object-fit: cover;
-}
+img {
+  border:  1px solid yellow;
+  object-fit: contain;
 
+}
