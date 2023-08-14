@@ -1,17 +1,24 @@
 .slideimg{
   border: 1px solid red;
   text-align: center;
+  width: 1080px;
 
 }
 
 .imgBox{
   border: 1px solid;
-  width: 500px;
-  height: 500px;
+  width: 1080px;
+  height: 566px;
+  text-align: center;
+  margin: auto;
   
 }
 
 .img {
-  object-fit: scale-down;
+  background-position: center;
+  position: absolute;
+  max-width: 800px;
+  max-width: 400px;
+  object-fit: cover;
 }
 
