@@ -314,10 +314,53 @@ let data = [
   },
   {
     id: 52,
-    title: '멀티펜',
+    title: '멀티팬',
     content: '선풍기',
     price: 130000
   },
+  {
+    id: 53,
+    title: '크레모아 서큘레이터',
+    content: '서큘레이터',
+    price: 48000
+  },
+  {
+    id: 54,
+    title: '아이스쿨러',
+    content: '쿨러',
+    price: 180000
+  },
+  {
+    id: 55,
+    title: '캠핑 냉동고',
+    content: '냉동고',
+    price: 700000
+  },
+  {
+    id: 56,
+    title: '캠핑 냉장고',
+    content: '냉장고',
+    price: 580000
+  },
+  {
+    id: 57,
+    title: '워터 저그',
+    content: '워터저그',
+    price: 65000
+  },
+  {
+    id: 58,
+    title: '소프트 쿨러',
+    content: '쿨러',
+    price: 40000
+  },
+  {
+    id: 55,
+    title: '캠핑 냉동고',
+    content: '냉동고',
+    price: 700000
+  },
+
 
 
 ];
