@@ -4,8 +4,9 @@ import Header from './component/Header';
 import Main from './component/Main';
 import MainSlide from './component/MainSlide';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import MainNavbar from './component/MainNavbar';
+
 
 
 
@@ -22,14 +23,19 @@ function App() {
         console.log(error);
       })
   }, [])
+
+
   return (
     <div className="App">
 
       <Header />
-      <Routes>
-      <Route path='/' element={<Main camping={camping} setcamping={setcamping} axios={axios} useEffect={useEffect} />} />
-      
-      </Routes>
+      <Suspense fallback={<div>로딩중</div>}>
+        <Routes>
+          <Route path='/' element={<Main camping={camping} setcamping={setcamping} axios={axios} useEffect={useEffect} />} />
+         
+
+        </Routes>
+      </Suspense>
 
 
 
