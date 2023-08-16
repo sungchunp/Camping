@@ -2,37 +2,37 @@
 
 .header {
   display: block;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .d-inline-block {
-  border: 1px solid;
+  /* border: 1px solid; */
   width : 150px;
   height : 150px;
   vertical-align: top;
 }
 
 .d-flex {
-  border: 1px solid;
+  /* border: 1px solid; */
   width : 500px;
   text-align: center;
   
 }
 
 .ljc {
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .ljc .login {
-  border: 1px solid;
+  /* border: 1px solid; */
   padding: auto;
 }
 
 .ljc .join {
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .ljc .cart {
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 

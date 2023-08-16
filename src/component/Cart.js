@@ -36,21 +36,22 @@ const Cart = () => {
 
   return (
     <>
-    <input type="number" value={n} onChange={(e) => {
+    {/* <input type="number" value={n} onChange={(e) => {
       setN(e.target.value);
-    }} />
-      {result}
-      <Test num={num} />
+    }} /> */}
+      {/* {result} */}
+      {/* <Test num={num} />
       <button onClick={() => {
         setNum(num + 1);
-      }}>버튼</button>
+      }}>버튼</button> */}
       <Table>
         <thead>
           <tr>
             <th>번호</th>
             <th>상품명</th>
             <th>수량</th>
-            <th>변경</th>
+            <th>금액</th>
+            <th>수정</th>
           </tr>
         </thead>
         <tbody>

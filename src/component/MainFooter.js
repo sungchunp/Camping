@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import './MainFooter.css';
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const MainFooter = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const MainFooter = () => {
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="card-body">
-          <a onClick={() => { Navigate('/detail/:id') }}>상세페이지</a>
+          <a onClick={() => { navigate('/detail/:id') }}>상세페이지</a>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ const MainFooter = () => {
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="card-body">
-          <a onClick={() => { Navigate('/detail/:id') }}>상세페이지</a>
+          <a onClick={() => { navigate('/detail/:id') }}>상세페이지</a>
         </div>
       </div>
 
@@ -37,7 +37,7 @@ const MainFooter = () => {
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="card-body">
-          <a onClick={() => { Navigate('/detail/:id') }}>상세페이지</a>
+          <a onClick={() => { navigate('/detail/:id') }}>상세페이지</a>
         </div>
       </div>
     </Container>

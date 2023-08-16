@@ -1,10 +1,10 @@
 .slideimg{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   text-align: center;
 }
 
 .imgBox{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   margin: auto;
   width: 1320px;
@@ -12,7 +12,7 @@
 }
 
 img {
-  border:  1px solid yellow;
+  /* border:  1px solid yellow; */
   object-fit: contain;
 
 }
