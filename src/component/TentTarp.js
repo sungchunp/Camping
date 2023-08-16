@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 const TentTarp = ({ camping }) => {
   const [viewProduct, setviewProduct] = useState(9);
   let viewCamping = camping.slice(0, viewProduct);

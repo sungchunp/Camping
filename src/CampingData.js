@@ -1,7 +1,7 @@
 let data = [
   {
     id: 0,
-    title: '이게 텐트여',
+    title: 'tent1',
     content: '벨형 텐트',
     price: 800000
   },
@@ -359,7 +359,7 @@ let data = [
     title: '캠핑 냉동고',
     content: '냉동고',
     price: 700000
-  },
+  }
 
 
 

@@ -1,16 +1,18 @@
 import { useNavigate } from "react-router-dom";
-import data from "../CampingData";
 
-const Card = ({ data }) => {
+
+const Card = ({ campingData }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="col-md-4" onClick={() => {
-      navigate('/detail/' + data.id);
-    }} style={{cursor : 'pointer'}}>
-      <img src={`https://github.com/sungchunp/Camping/main/${data.title}.jpg`} style={{ width: '80%' }} />
-      <h4>{data.title}</h4>
-      <p>{data.price}</p>
+    <div className="cam-3" onClick={() => {
+      navigate('/detail/' + campingData.id);
+      }} style={{cursor : 'pointer'}}>
+      <img src={`https://raw.githubusercontent.com/sungchunp/image/main/${campingData.title}.jpg`} style={{ width: '100%' }} alt={campingData.title} />
+      <h4>{campingData.title}</h4>
+      <p>{campingData.price}</p>
     </div>
   );
 }
+
+export default Card;
