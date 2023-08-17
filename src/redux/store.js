@@ -1,5 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import watched from "./watchedSlice";
+import data from "../campingData";
 
 const cart = createSlice({
   name: 'cart',

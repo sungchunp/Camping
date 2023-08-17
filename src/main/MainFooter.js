@@ -1,6 +1,7 @@
 import { Container } from "react-bootstrap";
 import './MainFooter.css';
 import { useNavigate } from "react-router-dom";
+import data from "../campingData";
 
 const MainFooter = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const MainFooter = () => {
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="card-body">
-          <a onClick={() => { navigate('/detail/:id') }}>상세페이지</a>
+          <button onClick={() => { navigate('/detail/0') }}>상세페이지</button>
         </div>
       </div>
 
@@ -26,7 +27,7 @@ const MainFooter = () => {
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="card-body">
-          <a onClick={() => { navigate('/detail/:id') }}>상세페이지</a>
+          <button onClick={() => { navigate('/detail/24') }}>상세페이지</button>
         </div>
       </div>
 
@@ -37,7 +38,7 @@ const MainFooter = () => {
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
         <div class="card-body">
-          <a onClick={() => { navigate('/detail/:id') }}>상세페이지</a>
+          <button onClick={() => { navigate('/detail/31') }}>상세페이지</button>
         </div>
       </div>
     </Container>

@@ -1,6 +1,5 @@
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Button from 'react-bootstrap/Button';
 import { memo, useMemo, useState } from "react";
 import { addCount, removeCart, subCount } from "../redux/store";
 
@@ -36,15 +35,7 @@ const Cart = () => {
 
   return (
     <>
-    {/* <input type="number" value={n} onChange={(e) => {
-      setN(e.target.value);
-    }} /> */}
-      {/* {result} */}
-      {/* <Test num={num} />
-      <button onClick={() => {
-        setNum(num + 1);
-      }}>버튼</button> */}
-      <Table>
+        <Table>
         <thead>
           <tr>
             <th>번호</th>
@@ -57,23 +48,23 @@ const Cart = () => {
         <tbody>
           {
 
-            cart.map((data, i) => {
+            cart.map((campingData, i) => {
               return (
                 <tr key={i}>
-                  <td>{data.id}</td>
-                  <td>{data.title}</td>
+                  <td>{campingData.id}</td>
+                  <td>{campingData.title}</td>
                   <td>
                     <button onClick={() => {
-                      dispatch(addCount(data.id))
+                      dispatch(addCount(campingData.id))
                     }}>+</button>{' '}
-                    {data.count}
+                    {campingData.count}
                     {' '}<button onClick={() => {
-                      dispatch(subCount(data.id))
+                      dispatch(subCount(campingData.id))
                     }}>-</button>
                   </td>
                   <td>
                     <button onClick={() => {
-                      dispatch(removeCart(data.id))
+                      dispatch(removeCart(campingData.id))
                     }}>삭제</button>
                   </td>
                 </tr>

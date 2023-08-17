@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Card from "./Card";
-// import img from "../../public/img";
+import Card from "../component/Card";
+import data from "../campingData";
 
 const TentTarp = ({ camping }) => {
   const [viewProduct, setViewProduct] = useState(9);
@@ -8,8 +8,6 @@ const TentTarp = ({ camping }) => {
 
   return (
     <>
-    {/* <div className='main-bg'
-      style={{ backgroundImage: 'url(' + img + ')' }}></div> */}
       <div className="container">
         <div className="row">
           {

@@ -1,16 +1,18 @@
 import { useNavigate } from "react-router-dom";
+import data from "../campingData";
 
 
-const Card = ({ campingData }) => {
+const Card = ({ data }) => {
   const navigate = useNavigate();
 
   return (
     <div className="cam-3" onClick={() => {
-      navigate('/detail/' + campingData.id);
-      }} style={{cursor : 'pointer'}}>
-      <img src={`https://raw.githubusercontent.com/sungchunp/image/main/${campingData.title}.jpg`} style={{ width: '100%' }} alt={campingData.title} />
-      <h4>{campingData.title}</h4>
-      <p>{campingData.price}</p>
+      navigate('/detail/' + data.id);
+      }}>
+      <img src={`https://raw.githubusercontent.com/sungchunp/image/main/${data.title}.jpg`} //이건 또 왜 안나오지
+      style={{ width: '50%' }} alt={data.title} />
+      <h4>{data.title}</h4>
+      <p>{data.price + '원'}</p>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { Carousel, Container } from "react-bootstrap";
-import './MainSlide.css';
+import './Slide.css';
 
-const MainSlide = () => {
+const Slide = () => {
   return (
     <>
       <Container className="slideimg">
@@ -73,4 +73,4 @@ const MainSlide = () => {
   );
 }
 
-export default MainSlide;
+export default Slide;

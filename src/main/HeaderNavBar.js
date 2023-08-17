@@ -1,8 +1,8 @@
 import { Container, Nav } from "react-bootstrap";
-import "./MainNavbar.css";
+import "./HeaderNavBar.css";
 import { useNavigate } from "react-router-dom";
 
-const MainNavbar = () => {
+const HeaderNavBar = () => {
   const navigate = useNavigate();
 
   return (
@@ -25,4 +25,4 @@ const MainNavbar = () => {
   )
 }
 
-export default MainNavbar;
+export default HeaderNavBar;
