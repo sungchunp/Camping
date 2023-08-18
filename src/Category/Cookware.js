@@ -2,8 +2,8 @@ import { useState } from "react";
 import Card from "../component/Card";
 import data from "../campingData";
 
-const TentTarp = ({ camping }) => {
-  const [viewProduct, setViewProduct] = useState(9);
+const Cookware = ({ camping }) => {
+  const [viewProduct, setViewProduct] = useState(10);
   let viewCamping = camping.slice(0, viewProduct);
 
   return (
@@ -24,4 +24,4 @@ const TentTarp = ({ camping }) => {
   );
 }
 
-export default TentTarp;
+export default Cookware;

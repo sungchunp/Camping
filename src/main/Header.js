@@ -28,10 +28,9 @@ const Header = () => {
 
 
 
-        <Nav className="ljc">
+        <Nav className="LoginSingupcart">
           {/* 로그인, 회원가입, 장바구니 링크 */}
-          <Nav.Link className="login" onClick={() => { navigate('/login') }}>로그인</Nav.Link>
-          <Nav.Link className="join" onClick={() => { navigate('/join') }}>회원가입</Nav.Link>
+          <Nav.Link className="LoginSingup" onClick={() => { navigate('/LoginSingup') }}>로그인/회원가입</Nav.Link>
           <Nav.Link className="cart" onClick={() => { navigate('/cart') }}>장바구니</Nav.Link>
         </Nav>
       </Container>

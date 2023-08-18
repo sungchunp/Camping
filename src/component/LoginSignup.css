@@ -1,0 +1,14 @@
+.LS {
+  border:  1px solid red;
+  width: 500px;
+  text-align: center;
+}
+
+.cardcover {
+  border:  1px solid blue;
+  max-width: fit-content;
+  width: 450px;
+  height: 600px;
+  
+}
+

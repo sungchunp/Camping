@@ -12,7 +12,7 @@ import './Detail.css';
 
 const Detail = ({ camping }) => {
   const { id } = useParams();
-  const [tabNumber, setTabNumber] = useState(0);
+  const [tabclick, setTabclick] = useState(0);
   const dispatch = useDispatch();
   const [alert, setAlert] = useState(true);
 
@@ -59,7 +59,7 @@ const Detail = ({ camping }) => {
           <p>{camping[id].content}</p>
           <p>{camping[id].price + '원'}</p>
           <button className="btn btn-primary" onClick={() => {
-            dispatch(addCart({ id: + id, title: camping[id].title, count: 1 }))
+            dispatch(addCart({ id: + id, title: camping[id].title, count: 1, price : camping[id].price }))
           }}>주문하기</button>
         </div>
       </div>
@@ -68,7 +68,7 @@ const Detail = ({ camping }) => {
       <Nav className="denav" justify variant="tabs" defaultActiveKey="link-0">
         <Nav.Item>
           <Nav.Link eventKey="link-0" onClick={() => {
-            setTabNumber(0)
+            setTabclick(0)
           }}>상세정보
           </Nav.Link>
           <div className='img-detail'>
@@ -77,22 +77,22 @@ const Detail = ({ camping }) => {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-1" onClick={() => {
-            setTabNumber(1)
+            setTabclick(1)
           }}>리뷰</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-2" onClick={() => {
-            setTabNumber(2)
+            setTabclick(2)
           }}>Q&A</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link eventKey="link-3" onClick={() => {
-            setTabNumber(3)
+            setTabclick(3)
           }}>반품,교환정보</Nav.Link>
         </Nav.Item>
       </Nav>
 
-      <TabContent tabNumber={tabNumber} />
+      <TabContent tabclick={tabclick} />
     </>
   );
 }

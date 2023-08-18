@@ -2,6 +2,7 @@ import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { memo, useMemo, useState } from "react";
 import { addCount, removeCart, subCount } from "../redux/store";
+import Detail from "./Detail";
 
 const Test = memo(({ num }) => {
 
@@ -62,6 +63,7 @@ const Cart = () => {
                       dispatch(subCount(campingData.id))
                     }}>-</button>
                   </td>
+                  <td>{campingData.price}</td>
                   <td>
                     <button onClick={() => {
                       dispatch(removeCart(campingData.id))

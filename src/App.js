@@ -9,9 +9,17 @@ import { Suspense, useEffect, useState } from 'react';
 
 import Detail from './component/Detail';
 import Cart from './component/Cart';
-import TentTarp from './kategorie/TentTarp';
 import Store from './redux/store';
 import Card from './component/Card';
+import TentTarp from './Category/TentTarp';
+import Table from './Category/Table';
+import LoginSignup from './component/LoginSignup';
+import Chair from './Category/Chair';
+import Lamp from './Category/Lamp';
+import Barzier from './Category/Brazier';
+import Segoods from './Category/Segoods';
+import Cookware from './Category/Cookware';
+import Accessory from './Category/Accessory';
 
 
 const URL = 'https://raw.githubusercontent.com/sungchunp/camping.json/main/data.json';
@@ -43,8 +51,16 @@ console.log(data);
           <Route path='/detail/:id' element={<Detail camping={camping} axios={axios} />} />
           <Route path='/cart' element={<Cart camping={camping} />} />
           <Route path='/tenttarp' element={<TentTarp camping={camping} /> } />
-          <Route path='/store' element={Store}/>
-          <Route path='/card' element={Card}/>
+          <Route path='/table' element={<Table camping={camping} />}/>
+          <Route path='/chair' element={<Chair camping={camping} />}/>
+          <Route path='/lamp' element={<Lamp camping={camping} />}/>
+          <Route path='/brazier' element={<Barzier camping={camping} />}/>
+          <Route path='/segoods' element={<Segoods camping={camping} />}/>
+          <Route path='/cookware' element={<Cookware camping={camping} />}/>
+          <Route path='/accessory' element={<Accessory camping={camping} />}/>
+          <Route path='/store' element={<Store/>}/>
+          <Route path='/card' element={<Card camping={camping} />}/>
+          <Route path='/LoginSingup' element={<LoginSignup />}/>
           <Route path='*' element={<div>Page Not found</div>} />
         </Routes>
       </Suspense>

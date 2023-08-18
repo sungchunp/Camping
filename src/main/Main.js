@@ -1,6 +1,5 @@
 import MainFooter from "./MainFooter";
 import Slide from "./Slide";
-import TentTarp from "../kategorie/TentTarp";
 import HeaderNavBar from "./HeaderNavBar";
 
 
