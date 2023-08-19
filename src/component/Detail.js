@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { addCart } from "../redux/store";
 import { useDispatch } from "react-redux";
-import data from "../campingData";
+import data from "../CampingData";
 import { setWatched } from '../redux/watchedSlice';
 import './Detail.css';
 

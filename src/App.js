@@ -2,7 +2,7 @@ import { Route, Router, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './main/Header';
 import Main from './main/Main';
-import data from './campingData';
+import data from "./CampingData";
 import Slide from './main/Slide';
 import axios from 'axios';
 import { Suspense, useEffect, useState } from 'react';

@@ -360,9 +360,6 @@ let data = [
     content: '냉동고',
     price: 700000
   }
-
-
-
 ];
 
 export default data;

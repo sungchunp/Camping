@@ -1,25 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../component/Card";
-import data from "../campingData";
+import axios from "axios";
 
-const Lamp = ({ camping }) => {
-  const [viewProduct, setViewProduct] = useState(10);
-  let viewCamping = camping.slice(0, viewProduct);
+const Lamp = () => {
+  const [lampData, setLampData] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://raw.githubusercontent.com/sungchunp/camping.json/main/data.json")
+      .then((response) => {
+        const lampItems = response.data.filter((item) => item.category === "lamp");
+        setLampData(lampItems);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
+  const [viewProduct, setViewProduct] = useState();
+  let viewCamping = lampData.slice(0, viewProduct);
 
   return (
     <>
-      <div className="container">
-        <div className="row">
-          {
-            viewCamping.map((data, i) => {
-              return (
-                <Card data={data} key={i} />
-              );
-            })
-          }
+      <div className="container text-center">
+        <div className="row row-cols-3">
+          {viewCamping.map((data, i) => (
+            <div className="col" key={i}>
+              <Card data={data} />
+            </div>
+          ))}
         </div>
-      </div >
-
+      </div>
     </>
   );
 }
