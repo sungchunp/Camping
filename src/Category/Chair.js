@@ -11,9 +11,6 @@ const Chair = () => {
         const chairItems = response.data.filter((item) => item.category === "chair");
         setChairData(chairItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();

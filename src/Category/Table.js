@@ -11,9 +11,6 @@ const Table = () => {
         const tableItems = response.data.filter((item) => item.category === "table");
         setTableData(tableItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();

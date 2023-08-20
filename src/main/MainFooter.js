@@ -20,7 +20,7 @@ const MainFooter = () => {
 
 
       <div className="card2" style={{ width: "22rem" }}>
-        <img src="../img/Chair01.jpg" class="card-img-top"/>
+        <img src="../img/피크닉 체어.jpg" class="card-img-top"/>
         <div class="card-body">
           <h5 class="card-title">캠핑 의자</h5>
           <p class="card-text">캠핑갔으면 앉아서 멍 때려야죠</p>
@@ -37,7 +37,7 @@ const MainFooter = () => {
           <p class="card-text">필수품! 밤되면 주변에 아무것도 안보임</p>
         </div>
         <div class="card-body">
-          <button onClick={() => { navigate('/detail/31') }}>상세페이지</button>
+          <button onClick={() => { navigate('/detail/27') }}>상세페이지</button>
         </div>
       </div>
     </Container>

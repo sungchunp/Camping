@@ -11,9 +11,6 @@ const Accessory = () => {
         const accessoryItems = response.data.filter((item) => item.category === "accessory");
         setAccessoryData(accessoryItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();

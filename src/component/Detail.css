@@ -1,10 +1,10 @@
 .now {
-   border: 1px solid;
+   /* border: 1px solid; */
 }
 
 .pd-img {
    text-align: left;
-   border: 1px solid;
+   /* border: 1px solid; */
    margin-left: 150px;
    margin-top: 30px;
    margin-bottom: 20px;
@@ -20,7 +20,7 @@
 
 .pd-1 {
    
-   border: 1px solid;
+   /* border: 1px solid; */
    font-family: 'intelone-mono-font-family-regular';
    margin-left: 150px;
 }

@@ -11,10 +11,28 @@
 }
 
 .d-flex {
+  display: flex;
   /* border: 1px solid; */
   width : 500px;
-  text-align: center;
-  
+  align-items: center;
+}
+
+.d-flex input[type="search"] {
+  /* 추가된 부분 */
+  flex-grow: 1;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.d-flex button {
+  /* 추가된 부분 */
+  background-color: #ffc107;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .ljc {

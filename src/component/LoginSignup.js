@@ -17,49 +17,49 @@ const LoginSingup = () => {
             selectedKey={selected}
             onSelectionChange={setSelected}
           >
-            <Tab key="login" title="Login">
-              <form className="flex flex-col gap-4">
-                <Input isRequired label="Email" placeholder="Enter your email" type="email" />
+            <Tab key="login" title="로그인">
+               <form className="flex flex-col gap-4"> {/* flex-col : 세로 정렬, gap-4: 4픽셀 여백  */}
+                <Input isRequired label="Email" placeholder="email을 입력하세요" type="email" />
                 <Input
                   isRequired
                   label="Password"
-                  placeholder="Enter your password"
+                  placeholder="password를 입력하세요"
                   type="password"
                 />
                 <p className="text-center text-small">
-                  Need to create an account?{" "}
+                  회원가입을 하시겠습니까?{" "}
                   <Link size="sm" onPress={() => setSelected("sign-up")}>
-                    Sign up
+                    회원가입
                   </Link>
                 </p>
                 <div className="flex gap-2 justify-end">
                   <Button fullWidth color="primary">
-                    Login
+                    로그인
                   </Button>
                 </div>
               </form>
             </Tab>
 
 
-            <Tab key="sign-up" title="Sign up">
+            <Tab key="sign-up" title="회원가입">
               <form className="sign">
-                <Input isRequired label="Name" placeholder="Enter your name" type="password" />
-                <Input isRequired label="Email" placeholder="Enter your email" type="email" />
+                <Input isRequired label="Name" placeholder="이름을 입력하세요" type="password" />
+                <Input isRequired label="Email" placeholder="email을 입력하세요" type="email" />
                 <Input
                   isRequired
                   label="Password"
-                  placeholder="Enter your password"
+                  placeholder="password를 입력하세요"
                   type="password"
                 />
                 <p className="text-center text-small">
-                  Already have an account?{" "}
+                  이미 계정이 있습니까?{" "}
                   <Link size="sm" onPress={() => setSelected("login")}>
-                    Login
+                    로그인
                   </Link>
                 </p>
                 <div className="flex gap-2 justify-end">
                   <Button fullWidth color="primary">
-                    Sign up
+                    가입하기
                   </Button>
                 </div>
               </form>
@@ -72,19 +72,3 @@ const LoginSingup = () => {
 }
 
 export default LoginSingup;
-  //   <Container>
-  //     <div className="login-warpper">
-  //       <h2>Login</h2>
-  //       <Form id="login-form">
-  //         <Input type="text" className="userName" placeholder="ID입력하세요"></Input>
-  //         <Input type="text" className="userPassword" placeholder="Password를 입력하세요"></Input>
-  //         <label for="remember-check">
-  // //           <Input type="checkbox" id="remember-check">아이디 저장하기</Input>
-  // //         </label>
-  // //         <input type="submit" value="Login"></input>
-  //       </Form>
-
-  //     </div>
-  //   </Container>
-
-   

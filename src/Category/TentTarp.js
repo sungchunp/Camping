@@ -4,6 +4,7 @@ import axios from "axios";
 
 const TentTarp = () => {
   const [tenttarpData, setTentTarpData] = useState([]);
+  const [viewProduct, setViewProduct] = useState();
 
   useEffect(() => {
     axios.get("https://raw.githubusercontent.com/sungchunp/camping.json/main/data.json")
@@ -11,12 +12,8 @@ const TentTarp = () => {
         const tenttarpItems = response.data.filter((item) => item.category === "tenttarp");
         setTentTarpData(tenttarpItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
-  const [viewProduct, setViewProduct] = useState();
   let viewCamping = tenttarpData.slice(0, viewProduct);
 
   return (

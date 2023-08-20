@@ -11,9 +11,6 @@ const Brazier = () => {
         const brazierItems = response.data.filter((item) => item.category === "brazier");
         setBrazierData(brazierItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();

@@ -11,9 +11,6 @@ const Cookware = () => {
         const cookwareItems = response.data.filter((item) => item.category === "cookware");
         setCookwareData(cookwareItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();

@@ -11,9 +11,6 @@ const Lamp = () => {
         const lampItems = response.data.filter((item) => item.category === "lamp");
         setLampData(lampItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();

@@ -11,9 +11,6 @@ const Segoods = () => {
         const segoodsItems = response.data.filter((item) => item.category === "segoods");
         setSegooodsData(segoodsItems);
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
   }, []);
 
   const [viewProduct, setViewProduct] = useState();
