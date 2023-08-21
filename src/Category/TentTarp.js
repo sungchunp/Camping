@@ -6,7 +6,7 @@ import axios from "axios";
 
 const TentTarp = () => {
   const [tenttarpData, setTentTarpData] = useState([]);
-  const [viewProduct, setViewProduct] = useState();
+  const [viewProduct] = useState();
 
   useEffect(() => {
     axios.get("https://raw.githubusercontent.com/sungchunp/camping.json/main/data.json")

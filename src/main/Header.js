@@ -27,7 +27,7 @@ const Header = () => {
           />
         </Nav>
 
-        <form classNamess="d-flex" role="search" onSubmit={handleSearchSubmit}>
+        <form className="d-flex" role="search" onSubmit={handleSearchSubmit}>
         <input
             className="form-control me-2" //me-2 : margin end
             type="search"
@@ -35,7 +35,7 @@ const Header = () => {
             aria-label="Search"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)} />
-          <button classNameass="btn btn-outline-warning" type="submit">검색</button>
+          <button className="btn btn-outline-warning" type="submit">검색</button>
         </form>
 
         <Nav className="LoginSingupcart">

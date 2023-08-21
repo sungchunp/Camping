@@ -2,18 +2,17 @@
 
 
 
-import { Route, Router, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './main/Header';
 import Main from './main/Main';
 import data from "./CampingData";
-import Slide from './main/Slide';
 import axios from 'axios';
 import { Suspense, useEffect, useState } from 'react';
+import { Slice } from '@reduxjs/toolkit';
 
 import Detail from './component/Detail';
 import Cart from './component/Cart';
-import Store from './redux/store';
 import Card from './component/Card';
 import TentTarp from './Category/TentTarp';
 import Table from './Category/Table';
@@ -62,7 +61,7 @@ console.log(data);
           <Route path='/segoods' element={<Segoods camping={camping} />}/>
           <Route path='/cookware' element={<Cookware camping={camping} />}/>
           <Route path='/accessory' element={<Accessory camping={camping} />}/>
-          <Route path='/store' element={<Store/>}/>
+          {/* <Route path='/store' element={<Store/>}/> */}
           <Route path='/card' element={<Card camping={camping} />}/>
           <Route path='/LoginSingup' element={<LoginSignup />}/>
           <Route path='*' element={<div>Page Not found</div>} />
