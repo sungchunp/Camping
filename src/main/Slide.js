@@ -1,6 +1,8 @@
 import { Carousel, Container } from "react-bootstrap";
 import './Slide.css';
 
+//중복 코드 수 줄이기
+
 const Slide = () => {
   return (
     <>

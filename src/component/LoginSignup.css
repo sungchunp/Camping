@@ -38,7 +38,7 @@
 }
 
 .link:hover {
-  text-decoration: underline; /* 링크에 호버 시 밑줄 효과 추가 */
+  text-decoration: underline;
 }
 
 .button {

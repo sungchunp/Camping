@@ -1,6 +1,8 @@
 import React from "react";
 import { Input, Link, Button, Card, CardBody } from "@nextui-org/react";
 
+// ★모달창으로 바꿔서 제작해보기
+
 const LoginPage = ({ setSelected }) => {
   return (
     <Card className="cardcover">

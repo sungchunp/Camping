@@ -27,11 +27,9 @@ const Header = () => {
           />
         </Nav>
 
-
-
-        <form classNamess="d-flex" role="search"onSubmit={handleSearchSubmit}>
+        <form classNamess="d-flex" role="search" onSubmit={handleSearchSubmit}>
         <input
-            className="form-control me-2"
+            className="form-control me-2" //me-2 : margin end
             type="search"
             placeholder="검색어를 입력하세요"
             aria-label="Search"
@@ -40,10 +38,7 @@ const Header = () => {
           <button classNameass="btn btn-outline-warning" type="submit">검색</button>
         </form>
 
-
-
         <Nav className="LoginSingupcart">
-          {/* 로그인, 회원가입, 장바구니 링크 */}
           <Nav.Link className="LoginSingup" onClick={() => { navigate('/LoginSingup') }}>로그인/회원가입</Nav.Link>
           <Nav.Link className="cart" onClick={() => { navigate('/cart') }}>장바구니</Nav.Link>
         </Nav>

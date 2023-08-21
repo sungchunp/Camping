@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Card from "../component/Card";
 import axios from "axios";
 
+//카테고리 8개의 코드 -> 한개의 코드로 수정하기
+
 const TentTarp = () => {
   const [tenttarpData, setTentTarpData] = useState([]);
   const [viewProduct, setViewProduct] = useState();

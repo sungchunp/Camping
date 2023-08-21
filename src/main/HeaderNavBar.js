@@ -2,6 +2,8 @@ import { Container, Nav } from "react-bootstrap";
 import "./HeaderNavBar.css";
 import { useNavigate } from "react-router-dom";
 
+// 헤더 쪽 밑에 네비바 고정되게 바꿔서 수정
+
 const HeaderNavBar = () => {
   const navigate = useNavigate();
 

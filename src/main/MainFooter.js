@@ -2,6 +2,9 @@ import { Container } from "react-bootstrap";
 import './MainFooter.css';
 import { useNavigate } from "react-router-dom";
 
+//메인 slide밑에 나오게 footer는 따로 또 제작
+//중복 코드 수 줄이기
+
 const MainFooter = () => {
   const navigate = useNavigate();
 

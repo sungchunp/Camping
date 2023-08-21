@@ -26,7 +26,7 @@ const Detail = ({ camping }) => {
 
     watched = [...new Set(watched)];
 
-    localStorage.setItem('watched', JSON.stringify(watched));
+    localStorage.setItem('watched', JSON.stringify(watched)); //로컬스토리지 쓸건지 말건지 정해서 수정하기
     dispatch(setWatched(watched));
   }, [id, dispatch]);
 

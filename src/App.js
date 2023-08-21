@@ -1,3 +1,7 @@
+//오류 찾아서 해결하기
+
+
+
 import { Route, Router, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './main/Header';
@@ -47,8 +51,8 @@ console.log(data);
       <Header />
       <Suspense fallback={<div>로딩중</div>}>
         <Routes>
-          <Route path='/' element={<Main camping={camping} setcamping={setcamping} axios={axios} useEffect={useEffect} />} />
-          <Route path='/detail/:id' element={<Detail camping={camping} axios={axios} />} />
+          <Route path='/' element={<Main camping={camping} setcamping={setcamping} />} />
+          <Route path='/detail/:id' element={<Detail camping={camping} />} />
           <Route path='/cart' element={<Cart camping={camping} />} />
           <Route path='/tenttarp' element={<TentTarp camping={camping} /> } />
           <Route path='/table' element={<Table camping={camping} />}/>
